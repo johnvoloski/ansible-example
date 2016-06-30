@@ -1,0 +1,6 @@
+- name: install nginx
+  apt: name=nginx state=present
+
+- name: install nginx template
+  template: src=default.conf dest=/etc/nginx/conf.d/default.conf
+  notify: restart nginx

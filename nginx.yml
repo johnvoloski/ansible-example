@@ -1,0 +1,4 @@
+- name: nginx playbook
+  hosts: www
+  roles:
+    - nginx
